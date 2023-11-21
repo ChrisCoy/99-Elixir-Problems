@@ -3,6 +3,6 @@
 
 defmodule NinetyNineElixirProblems.Solutions.Solution2 do
   def call([]), do: nil
-  def call([el]), do: el
+  def call([first, second]), do: [first, second]
   def call([_head | tail]), do: call(tail)
 end

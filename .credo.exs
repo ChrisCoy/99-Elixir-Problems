@@ -144,7 +144,7 @@
           {Credo.Check.Warning.Dbg, []},
           {Credo.Check.Warning.ExpensiveEmptyEnumCheck, []},
           {Credo.Check.Warning.IExPry, []},
-          {Credo.Check.Warning.IoInspect, []},
+          {Credo.Check.Warning.IoInspect, false},
           {Credo.Check.Warning.MissedMetadataKeyInLoggerConfig, []},
           {Credo.Check.Warning.OperationOnSameValues, []},
           {Credo.Check.Warning.OperationWithConstantResult, []},
