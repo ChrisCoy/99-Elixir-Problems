@@ -14,8 +14,27 @@ defmodule Mix.Tasks.Start do
 
     # IO.inspect(Solutions.Solution5.call(["c", "h", "r", "i", "s"]))
 
-    # IO.inspect(Solutions.Solution6.call(["c", "h", "r", "i", "s"]))
+    # IO.inspect(Solutions.Solution6.call(["x", "a", "m", "a", "x"]))
 
-    IO.inspect(Solutions.Solution7.call(["c", "h", "r", "i", "s"]))
+    # IO.inspect(Solutions.Solution7.call([1, 2, [1, 2, 3, 4, 5], 4, [1, 2]]))
+
+    IO.inspect(
+      Solutions.Solution8.call([
+        "a",
+        "a",
+        "a",
+        "a",
+        "b",
+        "c",
+        "c",
+        "a",
+        "a",
+        "d",
+        "e",
+        "e",
+        "e",
+        "e"
+      ])
+    )
   end
 end
