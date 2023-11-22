@@ -2,7 +2,7 @@
 
 defmodule NinetyNineElixirProblems.Solutions.Solution11 do
   def call([], map) do
-    Enum.reduce(map, [], fn {key, value}, acc ->
+    Enum.reduce(map, [], fn {value, key}, acc ->
       if value == 1 do
         acc ++ [key]
       else
