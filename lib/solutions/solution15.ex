@@ -1,4 +1,4 @@
-# 14. 15. Replicate the elements of a list a given number of times. (medium)
+# 15. Replicate the elements of a list a given number of times. (medium)
 
 defmodule NinetyNineElixirProblems.Solutions.Solution15 do
   def call([], _times, acc), do: acc
