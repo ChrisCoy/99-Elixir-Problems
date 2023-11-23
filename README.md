@@ -2,7 +2,7 @@
 
 The goal is to solve the famous 99 lisp problems(originally in prologog), but in elixir, another functional language.
 
-But my personal goal is to learn deeply the elixir language, learn the tricks and the behavior. So, probably i will not write clean code. I wanna know what i can, e what i cannot do, test all limits.
+But my personal goal is to learn deeply the elixir language, learn the tricks and the behavior. So, probably i will not write clean code. I wanna know what i can, and what i cannot do, test all limits.
 
 That said, feel free to open issue or pr to show me better ways to do something, or new tricks, i will appreciate it a lot 💜.
 
