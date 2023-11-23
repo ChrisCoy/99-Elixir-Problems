@@ -1,4 +1,8 @@
-# 10. Run-length encoding of a list. (easy)
+# 11. Modified run-length encoding. (easy)
+
+# Modify the result of the previous problem in such a way that if an element has no
+# duplicates it is simply copied into the result list. Only elements with duplicates
+# are transferred as (N E) lists.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution11 do
   def call([], map) do

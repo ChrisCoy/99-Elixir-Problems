@@ -1,16 +1,9 @@
-# 10. Run-length encoding of a list. (easy)
+# 12. Decode a run-length encoded list. (medium)
+
+# Given a run-length code list generated as specified in the previous problem,
+# construct its uncompressed version.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution12 do
-  # def call([], map) do
-  #   Enum.reduce(map, [], fn {key, value}, acc ->
-  #     if value == 1 do
-  #       acc ++ [key]
-  #     else
-  #       acc ++ [{key, value}]
-  #     end
-  #   end)
-  # end
-
   def call([], acc), do: acc
 
   def call([head | tail], acc \\ []) do
@@ -20,6 +13,6 @@ defmodule NinetyNineElixirProblems.Solutions.Solution12 do
     end
   end
 
-  defp add_n_times(list, el, 0), do: list
+  defp add_n_times(list, _el, 0), do: list
   defp add_n_times(list, el, n), do: add_n_times(list ++ [el], el, n - 1)
 end
