@@ -1,4 +1,4 @@
-# 15. Replicate the elements of a list a given number of times. (medium)
+# 16. Drop every N'th element from a list. (medium)
 
 defmodule NinetyNineElixirProblems.Solutions.Solution16 do
   def call([], _nth, _cont, list), do: list
