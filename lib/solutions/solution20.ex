@@ -1,4 +1,4 @@
-# 19. Rotate a list N places to the left. (medium)
+# 20. Remove the K'th element from a list. (easy)
 
 defmodule NinetyNineElixirProblems.Solutions.Solution20 do
   def call(list, at, acc \\ [])
