@@ -49,6 +49,6 @@ defmodule Mix.Tasks.Start do
 
     # IO.inspect(Solution18.call([1, 2, 3, 4, 5, 6, 7, 8, 9], 2, 5))
 
-    IO.inspect(Solution19.call(["a", "b", "c", "c", "d"], 2))
+    IO.inspect(Solution19.call([1, 2, 3, 4, 5], 7))
   end
 end
