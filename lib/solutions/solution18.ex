@@ -1,8 +1,10 @@
-# 17. Split a list into two parts; the length of the first part is given. (easy)
+# 18. Extract a slice from a list. (medium)
+
+# Given two indices, i and k, the slice is the list containing the elements between the
+# i'th and k'th element of the original list (both limits included). Start counting the
+# elements with 0 (this is the way the List module numbers elements).
 
 defmodule NinetyNineElixirProblems.Solutions.Solution18 do
-  #
-
   def call(list, start, ending), do: till_start_zero(list, start, ending)
 
   def till_start_zero(list, 0, ending), do: till_ending_zero(list, ending)
