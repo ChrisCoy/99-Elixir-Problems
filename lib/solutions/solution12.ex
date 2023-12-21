@@ -4,12 +4,13 @@
 # construct its uncompressed version.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution12 do
-  def call([], acc), do: acc
+  def decode(list, acc)
+  def decode([], acc), do: acc
 
-  def call([head | tail], acc \\ []) do
+  def decode([head | tail], acc) do
     case head do
-      {value, key} -> call(tail, acc ++ add_n_times([], key, value))
-      el -> call(tail, acc ++ add_n_times([], el, 1))
+      {value, key} -> decode(tail, acc ++ add_n_times([], key, value))
+      el -> decode(tail, acc ++ add_n_times([], el, 1))
     end
   end
 
