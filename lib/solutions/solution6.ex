@@ -2,5 +2,5 @@
 
 defmodule NinetyNineElixirProblems.Solutions.Solution6 do
   alias NinetyNineElixirProblems.Solutions.Solution5, as: Reverse
-  def call(list), do: Reverse.call(list) == list
+  def is_palindrome(list), do: Reverse.rev(list) == list
 end
