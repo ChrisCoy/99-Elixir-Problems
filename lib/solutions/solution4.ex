@@ -1,6 +1,7 @@
 # 4. Find the number of elements of a list. (easy)
 
 defmodule NinetyNineElixirProblems.Solutions.Solution4 do
-  def call([], size), do: size
-  def call([_head | tail], size \\ 0), do: call(tail, size + 1)
+  def length(list, size \\ 0)
+  def length([], size), do: size
+  def length([_head | tail], size), do: length(tail, size + 1)
 end
