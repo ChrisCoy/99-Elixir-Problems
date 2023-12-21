@@ -3,8 +3,8 @@
 # The selected numbers shall be returned in a list.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution24 do
-  import NinetyNineElixirProblems.Solutions.Solution23
-  import NinetyNineElixirProblems.Solutions.Solution22
+  # import NinetyNineElixirProblems.Solutions.Solution23
+  # import NinetyNineElixirProblems.Solutions.Solution22
   alias :rand, as: Rand
 
   def lotto_select(size, limit, acc \\ [])
