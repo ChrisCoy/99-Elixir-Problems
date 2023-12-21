@@ -1,19 +1,20 @@
 defmodule Mix.Tasks.Start do
-  alias NinetyNineElixirProblems.Solutions.Solution22
-  alias NinetyNineElixirProblems.Solutions.Solution21
-  alias NinetyNineElixirProblems.Solutions.Solution20
-  alias NinetyNineElixirProblems.Solutions.Solution19
-  alias NinetyNineElixirProblems.Solutions.Solution18
-  alias NinetyNineElixirProblems.Solutions.Solution17
-  alias NinetyNineElixirProblems.Solutions.Solution16
-  alias NinetyNineElixirProblems.Solutions.Solution15
-  alias NinetyNineElixirProblems.Solutions.Solution14
-  alias NinetyNineElixirProblems.Solutions.Solution12
-  alias NinetyNineElixirProblems.Solutions.Solution11
-  alias NinetyNineElixirProblems.Solutions.Solution10
-  alias NinetyNineElixirProblems.Solutions.Solution9
-  alias NinetyNineElixirProblems.Solutions.Solution8
-  alias NinetyNineElixirProblems.Solutions
+  alias NinetyNineElixirProblems.Solutions.Solution23
+  # alias NinetyNineElixirProblems.Solutions.Solution22
+  # alias NinetyNineElixirProblems.Solutions.Solution21
+  # alias NinetyNineElixirProblems.Solutions.Solution20
+  # alias NinetyNineElixirProblems.Solutions.Solution19
+  # alias NinetyNineElixirProblems.Solutions.Solution18
+  # alias NinetyNineElixirProblems.Solutions.Solution17
+  # alias NinetyNineElixirProblems.Solutions.Solution16
+  # alias NinetyNineElixirProblems.Solutions.Solution15
+  # alias NinetyNineElixirProblems.Solutions.Solution14
+  # alias NinetyNineElixirProblems.Solutions.Solution12
+  # alias NinetyNineElixirProblems.Solutions.Solution11
+  # alias NinetyNineElixirProblems.Solutions.Solution10
+  # alias NinetyNineElixirProblems.Solutions.Solution9
+  # alias NinetyNineElixirProblems.Solutions.Solution8
+  # alias NinetyNineElixirProblems.Solutions
   use Mix.Task
 
   @shortdoc "run the last solved problem"
@@ -57,6 +58,9 @@ defmodule Mix.Tasks.Start do
     # IO.inspect(Solution20.call([1, 2, 3, 4, 5], 3))
 
     # IO.inspect(Solution21.call([1, 2, 3, 4, 5], :new_element, 3))
-    IO.inspect(Solution22.call(-10, -4))
+
+    # IO.inspect(Solution22.call(-10, -4))
+
+    IO.inspect(Solution23.call([1, 2, 3, 4, 5, 6, 7, 8, 9], 10))
   end
 end
