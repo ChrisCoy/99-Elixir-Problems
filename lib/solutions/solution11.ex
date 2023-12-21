@@ -5,7 +5,9 @@
 # are transferred as (N E) lists.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution11 do
-  def call([], map) do
+
+  def encode(list, map \\ %{})
+  def encode([], map) do
     Enum.reduce(map, [], fn {value, key}, acc ->
       if value == 1 do
         acc ++ [key]
@@ -15,8 +17,8 @@ defmodule NinetyNineElixirProblems.Solutions.Solution11 do
     end)
   end
 
-  def call([head | tail], map \\ %{}) do
+  def encode([head | tail], map) do
     new_map = Map.update(map, head, 1, fn n -> n + 1 end)
-    call(tail, new_map)
+    encode(tail, new_map)
   end
 end
