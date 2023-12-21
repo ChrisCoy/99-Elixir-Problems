@@ -3,6 +3,8 @@
 # The selected numbers shall be returned in a list.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution24 do
+  import NinetyNineElixirProblems.Solutions.Solution23
+  import NinetyNineElixirProblems.Solutions.Solution22
   alias :rand, as: Rand
 
   def lotto_select(size, limit, acc \\ [])
@@ -24,4 +26,7 @@ defmodule NinetyNineElixirProblems.Solutions.Solution24 do
       get_new_number(numbers, limit)
     end
   end
+
+  # OCAML website solution
+  # def lotto_select(n, m), do: rand_select(range(1, m), n)
 end
