@@ -3,23 +3,23 @@
 # If first argument is greater than second, produce a list in decreasing order.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution22 do
-  def call(from, to), do: range(from, to, [], get_signal(from, to))
+  def call(from, to), do: range(from, to, [], get_sign(from, to))
 
-  defp range(from, from, acc, _signal), do: acc ++ [from]
-  defp range(from, to, acc, signal), do: range(from + signal, to, acc ++ [from], signal)
+  defp range(from, from, acc, _sign), do: acc ++ [from]
+  defp range(from, to, acc, sign), do: range(from + sign, to, acc ++ [from], sign)
 
-  defp get_signal(from, to), do: if(from < to, do: 1, else: -1)
+  defp get_sign(from, to), do: if(from < to, do: 1, else: -1)
 
 
 
   ############## SLOW IMPLEMENTATION ##############
-  # it is slow because it have to calculate the signal every time it calls
+  # it is slow because it have to calculate the sign every time it calls
   # def call(from, to, acc \\ [])
   # def call(from, from, acc), do: acc ++ [from]
 
   # def call(from, to, acc) do
-  #   signal = if from < to, do: 1, else: -1
+  #   sign = if from < to, do: 1, else: -1
 
-  #   call(from + signal, to, acc ++ [from])
+  #   call(from + sign, to, acc ++ [from])
   # end
 end
