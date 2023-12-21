@@ -1,6 +1,6 @@
-# 23. Extract a given number of randomly selected elements from a list. (medium)
+# 24. Lotto: Draw N different random numbers from the set 1..M. (easy)
 
-# If first argument is greater than second, produce a list in decreasing order.
+# The selected numbers shall be returned in a list.
 
 defmodule NinetyNineElixirProblems.Solutions.Solution24 do
   alias :rand, as: Rand
