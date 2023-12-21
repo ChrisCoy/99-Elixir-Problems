@@ -1,11 +1,12 @@
 # 15. Replicate the elements of a list a given number of times. (medium)
 
 defmodule NinetyNineElixirProblems.Solutions.Solution15 do
-  def call([], _times, acc), do: acc
+  def replicate(list, times, acc \\ [])
+  def replicate([], _times, acc), do: acc
 
-  def call([head | tail], times, acc \\ []),
-    do: call(tail, times, acc ++ replicate([], head, times))
+  def replicate([head | tail], times, acc),
+    do: replicate(tail, times, acc ++ n_times([], head, times))
 
-  defp replicate(list, _el, 0), do: list
-  defp replicate(list, el, n), do: replicate(list ++ [el], el, n - 1)
+  defp n_times(list, _el, 0), do: list
+  defp n_times(list, el, n), do: n_times(list ++ [el], el, n - 1)
 end
