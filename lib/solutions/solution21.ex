@@ -4,8 +4,8 @@
 # insert the element at the end. (The behavior is unspecified if the position is negative.)
 
 defmodule NinetyNineElixirProblems.Solutions.Solution21 do
-  def call(list, element, at, acc \\ [])
-  def call([], element, _at, acc), do: acc ++ [element]
-  def call(list, element, 0, acc), do: acc ++ [element] ++ list
-  def call([h | t], element, at, acc), do: call(t, element, at - 1, acc ++ [h])
+  def insert_at(list, element, at, acc \\ [])
+  def insert_at([], element, _at, acc), do: acc ++ [element]
+  def insert_at(list, element, 0, acc), do: acc ++ [element] ++ list
+  def insert_at([h | t], element, at, acc), do: insert_at(t, element, at - 1, acc ++ [h])
 end
