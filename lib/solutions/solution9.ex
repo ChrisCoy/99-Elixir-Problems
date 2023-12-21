@@ -2,17 +2,20 @@
 
 defmodule NinetyNineElixirProblems.Solutions.Solution9 do
   alias NinetyNineElixirProblems.Solutions.Solution4, as: Length
-  def call([head | tail], ant \\ nil, acc \\ [], pack \\ []) do
+
+  def pack(list, ant \\ nil, acc \\ [], pack \\ [])
+
+  def pack([head | tail], ant, acc, pack) do
     if head == ant do
-      call(tail, head, acc, pack ++ [head])
+      pack(tail, head, acc, pack ++ [head])
     else
-      if Length.call(pack) == 0 do
-        call(tail, head, acc, [head])
+      if Length.length(pack) == 0 do
+        pack(tail, head, acc, [head])
       else
-        call(tail, head, acc ++ [pack], [head])
+        pack(tail, head, acc ++ [pack], [head])
       end
     end
   end
 
-  def call([], _ant, acc, pack), do: acc ++ [pack]
+  def pack([], _ant, acc, pack), do: acc ++ [pack]
 end
