@@ -5,7 +5,7 @@
 # elements with 0 (this is the way the List module numbers elements).
 
 defmodule NinetyNineElixirProblems.Solutions.Solution18 do
-  def call(list, start, ending), do: till_start_zero(list, start, ending)
+  def slice(list, start, ending), do: till_start_zero(list, start, ending)
 
   defp till_start_zero(list, 0, ending), do: till_ending_zero(list, ending)
   defp till_start_zero([_h | t], start, ending), do: till_start_zero(t, start - 1, ending)
