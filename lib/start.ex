@@ -1,4 +1,5 @@
 defmodule Mix.Tasks.Start do
+  alias NinetyNineElixirProblems.Solutions.Solution22
   alias NinetyNineElixirProblems.Solutions.Solution21
   alias NinetyNineElixirProblems.Solutions.Solution20
   alias NinetyNineElixirProblems.Solutions.Solution19
@@ -55,6 +56,7 @@ defmodule Mix.Tasks.Start do
 
     # IO.inspect(Solution20.call([1, 2, 3, 4, 5], 3))
 
-    IO.inspect(Solution21.call([1, 2, 3, 4, 5], :new_element, 3))
+    # IO.inspect(Solution21.call([1, 2, 3, 4, 5], :new_element, 3))
+    IO.inspect(Solution22.call(-10, -4))
   end
 end
